@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Archive: 2019</title>
+    <title>如何在GitHub文章中插入图片 - Hexo</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="liuzebin,"> 
-    
+    <meta name="description" content="当我们上传开源项目时为了吸引更多的小白来下载往往会添加一些图片详解。
+我们都知道，当我们在Github中新建一个repository时，一般都会同时创建一个README.md文件，该文件是一个mar,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -30,38 +31,75 @@
 <body class="loading">
     <span id="config-title" style="display:none">Hexo</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                    <div class="timeline">
-                      <h2 class="timeline-title">归档: 2篇</h2>
-                      
-                        
-                          <h3 class="timeline-subtitle">2019</h3>
-                        
-                        <div class="timeline-item">
-                          <time>2019-07-05</time>
-                          <a target="_self" href="/2019/07/05/howpushaimginhgithub/">如何在GitHub文章中插入图片</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2019-07-01</time>
-                          <a target="_self" href="/2019/07/01/test/">如何创建Linux端GitHub博客</a>
-                        </div>
-                      
-                    </div>
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">如何在GitHub文章中插入图片</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">如何在GitHub文章中插入图片</h1>
+        <div class="stuff">
+            <span>七月 05, 2019</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/GitHub/">GitHub</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/图片/">图片</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>当我们上传开源项目时为了吸引更多的小白来下载往往会添加一些图片详解。</p>
+<p>我们都知道，当我们在Github中新建一个repository时，一般都会同时创建一个README.md文件，该文件是一个markdown文件，一般用来在你的repository下面说明这个项目的简介。这样会有更多的人来参与了解你的项目。现在我们来实现一下如何在README.md中显示一张图片。</p>
+<p>（1）首先在你的本地项目目录下放一张你想要的插入的图片</p>
+<p>（2）在github编辑README.md文件，来引用这张图片，引用图片的语法如下：</p>
+<p>  (<a href="http://github.com/Liu-Ze-Bin/RealmDemo/raw/master/img.jpg" target="_blank" rel="noopener">http://github.com/Liu-Ze-Bin/RealmDemo/raw/master/img.jpg</a>)</p>
+<p>我来简单解释一下这个语法：</p>
+<p>  [Image text]这里面的文字其实是可选的，如果该图片不能正常显示，那么就会显示[]这里面的文本</p>
+<p>  <a href="http://github.com()/你自己的用户名/你的repository仓库名/raw/分支名master/你的图片的名字" target="_blank" rel="noopener">http://github.com()/你自己的用户名/你的repository仓库名/raw/分支名master/你的图片的名字</a></p>
+<p>或者直接就 ”<img src="/img/tupian.png" alt="Image text">也可以</p>
+<p>（3）最后把你的项目提交或者更新到Github上时，Github会自动解析这个语法，并把图片在README.md中显示出来。</p>
+<p>注：<br>    其实还是建议大家建个文件夹然后把图片放里面，方便管理，嘿嘿。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="http://domain.com/awesome.mp3">
+            </audio>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
